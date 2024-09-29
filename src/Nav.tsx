@@ -7,8 +7,8 @@ function Nav() {
       <div id='nav'>
         <ol>
           <li><h3>GamingLounge</h3></li>
-          <li><Link to="/home/">Home</Link></li>
-          <li><Link to="/rules/">Regelwerk</Link></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/Regeln/">Regelwerk</Link></li>
           <li><Link to="/test/">Test Page</Link></li>
         </ol>
       </div>
@@ -17,16 +17,13 @@ function Nav() {
         <p>GamingLounge.me</p>
         <h3>Links</h3>
         <a href='https://discord.gaminglounge.me/'>Discord</a><br />
+        <a href='https://youtube.gaminglounge.me/'>Youtube</a><br />
         <a href='https://tiktok.gaminglounge.me/'>Tiktok</a><br />
-        <a href='https://instagram.gaminglounge.me/'>Instagram</a><br />
         <br />
         <h3>Kontakt</h3>
-        <p>E-Mail: info@gaminglounge.me</p><br />
-        <br />
-        <br />
-        <br />
-        <h3>Impressum</h3>
-        <h3>Datenschutzerklährung</h3>
+        <p>E-Mail: info@gaminglounge.me</p>
+        <h3><Link to="/Impressum/">Impressum</Link></h3>
+        <h3><Link to="/Datenschutzerklährung/">Datenschutzerklährung</Link></h3>
       </div>
       <div id='foot'>
         <p>Copyright © 2024 GamingLounge.me</p>

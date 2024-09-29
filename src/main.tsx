@@ -6,6 +6,8 @@ import TestPage from './pages/TestPage.tsx';
 import NoPage from './pages/NoPage.tsx';
 import HomePage from "./pages/HomePage.tsx";
 import RulesPage from "./pages/RulesPage.tsx";
+import ImpressumPage from "./pages/ImpressumPage.tsx";
+import Dataprotection from "./pages/Dataprotection.tsx"
 
 const router = createBrowserRouter([
   {
@@ -14,11 +16,17 @@ const router = createBrowserRouter([
         path: "*", element: <NoPage />
       },
       {
-        path: "home", element: <HomePage />
+        path: "/", element: <HomePage />
       },
       {
-        path: "rules", element: <RulesPage />
+        path: "Regeln", element: <RulesPage />
       }, 
+      {
+        path: "Impressum", element: <ImpressumPage />
+      },
+      {
+        path: "Datenschutzerklährung", element: <Dataprotection />
+      },
       {
         path: "test", element: <TestPage />
       }
