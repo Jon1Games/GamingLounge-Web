@@ -4,6 +4,7 @@ import './Styles.css'
 
 function Nav() {
   const [visiblePlugins, setVisiblePlugins] = React.useState(true);
+  const [visiblePluginsStuff, setVisiblePluginsStuff] = React.useState(true);
   return (
     <>
       <div id='nav'> 
@@ -15,7 +16,13 @@ function Nav() {
             {visiblePlugins ? <img className='img-center' src='/src/assets/expand-arrow.png'/> : <img className='img-center' src='/src/assets/collapese-arrow.png'/>}</li>
           {visiblePlugins &&
           <ul>
-            <li>Test</li>
+            <li><button className='btn' onClick={() => setVisiblePluginsStuff(!visiblePluginsStuff)}>Stuff</button> 
+              {visiblePlugins ? <img className='img-center' src='/src/assets/expand-arrow.png'/> : <img className='img-center' src='/src/assets/collapese-arrow.png'/>}</li>
+            {visiblePluginsStuff &&
+            <ul>
+              <li>Test</li>
+            </ul>
+            }
             <li>Test</li>
           </ul>
           }
