@@ -92,6 +92,18 @@ body {
   text-align: center;
 }
 
+.ul-disk {
+  list-style-type:disc;
+}
+
+.ol-no_indent p {
+  margin-left: -20px;
+}
+
+.ol-no_indent ul, .ol-no_indent ol {
+  margin-left: -30px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

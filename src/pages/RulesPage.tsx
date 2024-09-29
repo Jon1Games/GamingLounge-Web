@@ -4,15 +4,20 @@ const RulesPage = () => {
     return (
         <>
             <h1>Regelwerk</h1>
-            <ol>
+            <ol className='ol-no_indent'>
                 <h2><li>Was zu beachten ist</li></h2>
-                        Um aus unseren Fehlern zu lernen und diesmal die Dinge besser zu machen, gibt es diese Regeln,
+                            <p>
+                            Um aus unseren Fehlern zu lernen und diesmal die Dinge besser zu machen, gibt es diese Regeln,
                             sind noch nicht perfekt und werden mit der Zeit ergänzt. Solte es eine Regel geben die zu ungenau 
-                            ist oder fehlt ist es empfohlen, auf <a href='https://discord.gaminglounge.me/'>Discord</a> 
-                            ein Ticket zu eröffnen.
+                            ist oder fehlt ist es empfohlen, auf <a href='https://discord.gaminglounge.me/'>Discord</a> ein 
+                            Ticket zu eröffnen.
+                            </p>
                 <h2><li>Zuständigkeits bereich</li></h2>
+                        <p>
                         Die folgenden Regeln gelten für das <strong>Gesammte</strong> GamingLounge Netzwerk, dies beinhaltet 
-                        unter anderem den Discord Server und alle anderen Service im zusammenhang mit dem GamingLounge.me Netzwerk.
+                        unter anderem den Discord Server, das Minecraft Netzwerk und alle weiteren Services im zusammenhang 
+                        mit dem GamingLounge.me Netzwerk.
+                        </p>
                     <h2><li>Allgemeines Verhalten</li></h2>
                     <ol>
                         <li>Die Spieler sind selbst für ihr Verhalten verantwortlich, es gelten die algemeinen Verhaltensrichtlienen
@@ -32,7 +37,7 @@ const RulesPage = () => {
                         <li>Rechte auf die eigende stime in z.b Streams auf Twitch oder YT endfallen.</li>
                     </ol>
                     <h2><li>Minecraft Server</li></h2>
-                    <ul>
+                    <ul className='ul-disk'>
                         <h3><li>Unfaire Vorteile gegenüber anderen</li></h3>
                             <ol>
                                 <li>Clientmodifikationen, die es einem ermöglichen durch Wände zu sehen, 
