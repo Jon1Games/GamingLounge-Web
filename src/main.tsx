@@ -2,7 +2,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ReactDOM from 'react-dom/client'
 import './Styles.css'
 import Nav from './Nav.tsx'
-import TestPage from './pages/TestPage.tsx';
 import NoPage from './pages/NoPage.tsx';
 import HomePage from "./pages/HomePage.tsx";
 import RulesPage from "./pages/RulesPage.tsx";
@@ -26,9 +25,6 @@ const router = createBrowserRouter([
       },
       {
         path: "Datenschutzerklährung", element: <Dataprotection />
-      },
-      {
-        path: "test", element: <TestPage />
       }
     ] 
   }

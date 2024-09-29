@@ -1,15 +1,24 @@
 import { Link, Outlet } from 'react-router-dom'
+import React from 'react';
 import './Styles.css'
 
 function Nav() {
+  const [visiblePlugins, setVisiblePlugins] = React.useState(true);
   return (
     <>
-      <div id='nav'>
+      <div id='nav'> 
         <ol>
           <li><h3>GamingLounge</h3></li>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/Regeln/">Regelwerk</Link></li>
-          <li><Link to="/test/">Test Page</Link></li>
+          <li><button className='btn' onClick={() => setVisiblePlugins(!visiblePlugins)}>Plugins</button> 
+            {visiblePlugins ? <img className='img-center' src='/src/assets/expand-arrow.png'/> : <img className='img-center' src='/src/assets/collapese-arrow.png'/>}</li>
+          {visiblePlugins &&
+          <ul>
+            <li>Test</li>
+            <li>Test</li>
+          </ul>
+          }
         </ol>
       </div>
       <div id='side'>
