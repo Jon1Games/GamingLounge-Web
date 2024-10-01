@@ -2,6 +2,8 @@ import { Link, Outlet } from 'react-router-dom'
 import React from 'react';
 import CookieConsent from "react-cookie-consent";
 import './Styles.css'
+import collapeseArrow from './assets/collapese-arrow.png'
+import expandArrow from './assets/expand-arrow.png'
 
 function Nav() {
   const [visiblePlugins, setVisiblePlugins] = React.useState(true);
@@ -20,11 +22,11 @@ function Nav() {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/Regeln/">Regelwerk</Link></li>
           <li><button className='btn' onClick={() => setVisiblePlugins(!visiblePlugins)}>Plugins</button> 
-            {visiblePlugins ? <img className='img-center' src='/src/assets/expand-arrow.png'/> : <img className='img-center' src='/src/assets/collapese-arrow.png'/>}</li>
+            {visiblePlugins ? <img className='img-center' src={expandArrow}/> : <img className='img-center' src={collapeseArrow}/>}</li>
           {visiblePlugins &&
           <ul>
             <li><button className='btn' onClick={() => setVisiblePluginsStuff(!visiblePluginsStuff)}>Stuff</button> 
-              {visiblePlugins ? <img className='img-center' src='/src/assets/expand-arrow.png'/> : <img className='img-center' src='/src/assets/collapese-arrow.png'/>}</li>
+              {visiblePlugins ? <img className='img-center' src={expandArrow}/> : <img className='img-center' src={collapeseArrow}/>}</li>
             {visiblePluginsStuff &&
             <ul>
               <li>Test</li>
