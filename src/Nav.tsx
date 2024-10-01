@@ -1,5 +1,6 @@
 import { Link, Outlet } from 'react-router-dom'
 import React from 'react';
+import CookieConsent from "react-cookie-consent";
 import './Styles.css'
 
 function Nav() {
@@ -7,6 +8,12 @@ function Nav() {
   const [visiblePluginsStuff, setVisiblePluginsStuff] = React.useState(true);
   return (
     <>
+      <CookieConsent
+        location="top"
+        buttonText="Akzeptieren"
+        overlay
+      >Um eine möglichst komfortable Nutzung der Webseite zu ermöglichen, verwenden wir, nach deiner Zustimmung sogenannte Cookies.<br />
+        Dies sind kleine Textdateien, welche verschiedene Informationen über dich und deinen Aufenthalt auf unserer Webseite enthalten können.</CookieConsent>
       <div id='nav'> 
         <ol>
           <li><h3>GamingLounge</h3></li>
